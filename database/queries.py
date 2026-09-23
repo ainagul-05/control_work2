@@ -19,7 +19,7 @@ insert_books_detail = 'INSERT INTO books_detail (book_id,genre) VALUES (?, ?)'
 
 
 get_books = """
-     SELECT books.book_id,books.name,books.autthor,books_detail.genre
+     SELECT books.book_id,books.name,books.author,books_detail.genre
      FROM books
      INNER JOIN books_detail
      ON books.book_id = books_detail.book_id 
